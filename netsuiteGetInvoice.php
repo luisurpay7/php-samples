@@ -1,10 +1,11 @@
 <?php
+// https://stackoverflow.com/questions/69358727/oauth-with-hmac-sha256-in-netsuite-using-php-curl-get
 
 $accountID = '6125688-sb1';
 $realm = "6125688_SB1";
 $ckey = "515343a0dd921d8a4d791e4c820f24d0846abb5f4085833e9355514a70b98cdc"; //Consumer Key
 $csecret = "66ccc8023769bc6720997f74be1474e33ec2d1c9015f5fe199f4bfd3f9c97d09"; //Consumer Secret
-$tkey = "4f85ec1fd6a9ce3a64d7e95e374d9666ff5df7266734843381a33865c03f8b3c"; //Token ID
+$tkey = "4f85ec1fd6a9ce3a64d7e95e374d9666ff5df7266734843381a33865c03f8b3c"; //Access Token / Token ID
 $tsecret = "b8c97c45dfa261017d6d1ae136729146c4adb7f0d600e0397c9ff24ec9d00b92"; //Token Secret
 
 $url = 'https://'.$accountID.'.suitetalk.api.netsuite.com/services/rest/record/v1/invoice/24528';
